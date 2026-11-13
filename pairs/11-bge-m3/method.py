@@ -47,11 +47,8 @@ def encode(texts, colbert=True):
     for i in range(0, len(texts), CHUNK):
         out = model.encode(texts[i:i + CHUNK], batch_size=32, max_length=MAX_LEN,
                            return_dense=True, return_sparse=True, return_colbert_vecs=colbert)
-        # dense part
         dense.append(np.asarray(out["dense_vecs"], dtype=np.float32))
-        # lexical part
         lexical += out["lexical_weights"]
-        # multi vector part
         if colbert:
             mul_vec += [np.asarray(v, dtype=np.float16) for v in out["colbert_vecs"]]
     return np.vstack(dense), lexical, mul_vec
@@ -79,17 +76,15 @@ def colbert_batch(q, docs):
     # to stack them in a single tensor D of shape (candidates, L, 1024).
     L = max(len(d) for d in docs)
     D = np.zeros((len(docs), L, q.shape[1]), dtype=np.float16)
-    # mask[k, j] = True if position j is a real token of doc k, False if it is padding
     mask = np.zeros((len(docs), L), dtype=bool)
     for k, d in enumerate(docs):
         D[k, :len(d)] = d
         mask[k, :len(d)] = True
     q = torch.from_numpy(np.asarray(q, dtype=np.float16)).to(DEVICE)
     D, mask = torch.from_numpy(D).to(DEVICE), torch.from_numpy(mask).to(DEVICE)
-    sim = torch.einsum("qh,kdh->kqd", q, D).float()            # (candidates, query tokens, doc tokens)
-    # Padding positions are set to -inf so the max over doc tokens never picks them
+    sim = torch.einsum("qh,kdh->kqd", q, D).float()
     sim = sim.masked_fill(~mask[:, None, :], float("-inf"))
-    return sim.max(dim=2).values.mean(dim=1).cpu().numpy()     # max over doc tokens, mean over query tokens
+    return sim.max(dim=2).values.mean(dim=1).cpu().numpy()
 
 
 def top(scores, k):
