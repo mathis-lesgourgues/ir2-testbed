@@ -1,0 +1,10 @@
+numpy
+scipy
+scikit-learn
+nltk
+rank-bm25
+pytrec-eval-terrier
+sentence-transformers>=3.3
+FlagEmbedding
+transformers 
+sentencepiece
