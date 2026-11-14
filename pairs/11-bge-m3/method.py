@@ -92,8 +92,9 @@ def top(scores, k):
     return np.argsort(-scores)[:k]
 
 
-def search(name, mode="all"):
-    corpus, queries, _ = testbed.load(name)
+def search(name, mode="all", queries=None):
+    corpus, test_queries, _ = testbed.load(name)
+    queries = queries or test_queries                           # e.g. the French SciFact queries
     ids, qids = list(corpus), list(queries)
     colbert = mode in ("multi-vec", "all")                      # multi-vectors only when needed (RAM)
     D_dense, D_lex, D_mul = encode(testbed.doc_texts(corpus), colbert)   # same text as the baselines

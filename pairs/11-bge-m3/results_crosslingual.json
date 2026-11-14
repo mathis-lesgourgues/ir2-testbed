@@ -1,0 +1,422 @@
+{
+ "dense": {
+  "en": {
+   "ndcg10": 0.6331,
+   "recall100": 0.9037
+  },
+  "fr": {
+   "ndcg10": 0.5857,
+   "recall100": 0.898,
+   "ndcg10_vs_en": {
+    "delta": -0.0474,
+    "p": 1.0589884031707172e-05,
+    "ci95": [
+     -0.0685,
+     -0.0277
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": -0.0057,
+    "p": 0.4607472880965274,
+    "ci95": [
+     -0.0217,
+     0.0087
+    ]
+   }
+  },
+  "fr_checked": {
+   "n_queries": 26,
+   "ndcg10": 0.6398,
+   "recall100": 0.8846,
+   "ndcg10_vs_en": {
+    "delta": -0.0184,
+    "p": 0.28064350173710406,
+    "ci95": [
+     -0.0547,
+     0.0098
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": 0.0,
+    "p": NaN,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "worst": [
+   {
+    "qid": "837",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "NR5A2 is important in development of endometrial tissues.",
+    "fr": "NR5A2 est important dans le développement des tissus de l'endomètre."
+   },
+   {
+    "qid": "1204",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "The combination of H3K4me3 and H3K79me2 is found in quiescent hair follicle stem cells.",
+    "fr": "La combinaison de H3K4me3 et de H3K79me2 se trouve dans les cellules souches du follicule pileux silencieux."
+   },
+   {
+    "qid": "743",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.356,
+    "en": "Macrolides protect against myocardial infarction.",
+    "fr": "Les macrolides protègent contre l' infarctus du myocarde."
+   },
+   {
+    "qid": "729",
+    "ndcg10_en": 0.631,
+    "ndcg10_fr": 0.0,
+    "en": "Lymphadenopathy is observed in knockin mouse lacking the SHP-2 MAPK pathway.",
+    "fr": "La lymphadénopathie est observée chez la souris qui ne possède pas la voie SHP-2 MAPK."
+   },
+   {
+    "qid": "513",
+    "ndcg10_en": 0.631,
+    "ndcg10_fr": 0.0,
+    "en": "High cardiopulmonary fitness causes increased mortality rate.",
+    "fr": "Une aptitude cardiopulmonaire élevée entraîne une augmentation du taux de mortalité."
+   }
+  ]
+ },
+ "sparse": {
+  "en": {
+   "ndcg10": 0.637,
+   "recall100": 0.8936
+  },
+  "fr": {
+   "ndcg10": 0.4422,
+   "recall100": 0.7511,
+   "ndcg10_vs_en": {
+    "delta": -0.1947,
+    "p": 7.708025490647692e-18,
+    "ci95": [
+     -0.237,
+     -0.1532
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": -0.1424,
+    "p": 5.155467427428607e-09,
+    "ci95": [
+     -0.1897,
+     -0.0974
+    ]
+   }
+  },
+  "fr_checked": {
+   "n_queries": 26,
+   "ndcg10": 0.61,
+   "recall100": 0.9231,
+   "ndcg10_vs_en": {
+    "delta": -0.0509,
+    "p": 0.3036795401930782,
+    "ci95": [
+     -0.1534,
+     0.0307
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": -0.0385,
+    "p": 0.5738965965433283,
+    "ci95": [
+     -0.1923,
+     0.0769
+    ]
+   }
+  },
+  "worst": [
+   {
+    "qid": "1144",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Taxation of sugar-sweetened beverages had no effect on the incidence rate of type II diabetes in India.",
+    "fr": "La taxation des boissons sucrées n'a eu aucun effet sur le taux d'incidence du diabète de type II en Inde."
+   },
+   {
+    "qid": "1319",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Transplanted human glial cells can differentiate within the host animal.",
+    "fr": "Les cellules gliales humaines transplantées peuvent se différencier au sein de l'animal hôte."
+   },
+   {
+    "qid": "439",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation",
+    "fr": "Pk dépendant de Fz/PCP se localise à la membrane antérieure des cellules neuroectodermiques lors de la neuralation du poisson zèbre"
+   },
+   {
+    "qid": "960",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Polymeal nutrition reduces cardiovascular mortality.",
+    "fr": "La nutrition en polymère réduit la mortalité cardiovasculaire."
+   },
+   {
+    "qid": "1146",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Teaching hospitals do not provide better care than non-teaching hospitals.",
+    "fr": "Les hôpitaux pédagogiques ne fournissent pas de meilleurs soins que les hôpitaux non pédagogiques."
+   }
+  ]
+ },
+ "multi-vec": {
+  "en": {
+   "ndcg10": 0.6831,
+   "recall100": 0.9103
+  },
+  "fr": {
+   "ndcg10": 0.6339,
+   "recall100": 0.904,
+   "ndcg10_vs_en": {
+    "delta": -0.0492,
+    "p": 2.224215099366786e-05,
+    "ci95": [
+     -0.0717,
+     -0.0278
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": -0.0063,
+    "p": 0.5568154408767143,
+    "ci95": [
+     -0.0277,
+     0.0137
+    ]
+   }
+  },
+  "fr_checked": {
+   "n_queries": 26,
+   "ndcg10": 0.7081,
+   "recall100": 0.9231,
+   "ndcg10_vs_en": {
+    "delta": -0.0009,
+    "p": 0.9762545195824452,
+    "ci95": [
+     -0.0568,
+     0.0563
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": 0.0385,
+    "p": 0.32689191269184126,
+    "ci95": [
+     0.0,
+     0.1154
+    ]
+   }
+  },
+  "worst": [
+   {
+    "qid": "1204",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "The combination of H3K4me3 and H3K79me2 is found in quiescent hair follicle stem cells.",
+    "fr": "La combinaison de H3K4me3 et de H3K79me2 se trouve dans les cellules souches du follicule pileux silencieux."
+   },
+   {
+    "qid": "644",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Insulin increases risk of severe kidney failure.",
+    "fr": "L'insuline augmente le risque d'insuffisance rénale sévère."
+   },
+   {
+    "qid": "793",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Mitochondria are uninvolved in apoptosis.",
+    "fr": "Les mitochondries ne sont pas impliquées dans l'apoptose."
+   },
+   {
+    "qid": "598",
+    "ndcg10_en": 0.631,
+    "ndcg10_fr": 0.0,
+    "en": "Incidence rates of cervical cancer have increased due to nationwide screening programs based primarily on cytology to detect uterine cervical cancer.",
+    "fr": "Les taux d'incidence du cancer du col de l'utérus ont augmenté en raison de programmes de dépistage à l'échelle nationale basés principalement sur la cytologie pour détecter le cancer du col de l'utérus."
+   },
+   {
+    "qid": "501",
+    "ndcg10_en": 0.631,
+    "ndcg10_fr": 0.0,
+    "en": "Headaches are not correlated with cognitive impairment.",
+    "fr": "Les maux de tête ne sont pas associés à une déficience cognitive."
+   }
+  ]
+ },
+ "dense+sparse": {
+  "en": {
+   "ndcg10": 0.6674,
+   "recall100": 0.917
+  },
+  "fr": {
+   "ndcg10": 0.6056,
+   "recall100": 0.9137,
+   "ndcg10_vs_en": {
+    "delta": -0.0618,
+    "p": 8.375543286422579e-08,
+    "ci95": [
+     -0.0845,
+     -0.0404
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": -0.0033,
+    "p": 0.739489097571239,
+    "ci95": [
+     -0.0233,
+     0.0167
+    ]
+   }
+  },
+  "fr_checked": {
+   "n_queries": 26,
+   "ndcg10": 0.6716,
+   "recall100": 0.9231,
+   "ndcg10_vs_en": {
+    "delta": -0.0388,
+    "p": 0.10984596418441027,
+    "ci95": [
+     -0.0864,
+     0.002
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": 0.0385,
+    "p": 0.32689191269184126,
+    "ci95": [
+     0.0,
+     0.1154
+    ]
+   }
+  },
+  "worst": [
+   {
+    "qid": "1204",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "The combination of H3K4me3 and H3K79me2 is found in quiescent hair follicle stem cells.",
+    "fr": "La combinaison de H3K4me3 et de H3K79me2 se trouve dans les cellules souches du follicule pileux silencieux."
+   },
+   {
+    "qid": "532",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Hyperfibrinogenemia decreases rates of femoropopliteal bypass thrombosis.",
+    "fr": "L' hyperfibrinogénémie réduit les taux de thrombose de contournement fémoropopliteal."
+   },
+   {
+    "qid": "533",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Hyperfibrinogenemia increases rates of femoropopliteal bypass thrombosis.",
+    "fr": "L' hyperfibrinogénémie augmente les taux de thrombose de contournement fémoropopliteal."
+   },
+   {
+    "qid": "100",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.301,
+    "en": "All hematopoietic stem cells segregate their chromosomes randomly.",
+    "fr": "Toutes les cellules souches hématopoiétiques séparent leurs chromosomes au hasard."
+   },
+   {
+    "qid": "729",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.301,
+    "en": "Lymphadenopathy is observed in knockin mouse lacking the SHP-2 MAPK pathway.",
+    "fr": "La lymphadénopathie est observée chez la souris qui ne possède pas la voie SHP-2 MAPK."
+   }
+  ]
+ },
+ "all": {
+  "en": {
+   "ndcg10": 0.6917,
+   "recall100": 0.9137
+  },
+  "fr": {
+   "ndcg10": 0.6345,
+   "recall100": 0.9147,
+   "ndcg10_vs_en": {
+    "delta": -0.0572,
+    "p": 1.762788843957733e-06,
+    "ci95": [
+     -0.0805,
+     -0.0349
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": 0.001,
+    "p": 0.9172213219461242,
+    "ci95": [
+     -0.018,
+     0.0197
+    ]
+   }
+  },
+  "fr_checked": {
+   "n_queries": 26,
+   "ndcg10": 0.71,
+   "recall100": 0.9231,
+   "ndcg10_vs_en": {
+    "delta": -0.0078,
+    "p": 0.679729116036916,
+    "ci95": [
+     -0.0467,
+     0.0282
+    ]
+   },
+   "recall100_vs_en": {
+    "delta": 0.0385,
+    "p": 0.32689191269184126,
+    "ci95": [
+     0.0,
+     0.1154
+    ]
+   }
+  },
+  "worst": [
+   {
+    "qid": "644",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "Insulin increases risk of severe kidney failure.",
+    "fr": "L'insuline augmente le risque d'insuffisance rénale sévère."
+   },
+   {
+    "qid": "1204",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.0,
+    "en": "The combination of H3K4me3 and H3K79me2 is found in quiescent hair follicle stem cells.",
+    "fr": "La combinaison de H3K4me3 et de H3K79me2 se trouve dans les cellules souches du follicule pileux silencieux."
+   },
+   {
+    "qid": "533",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.289,
+    "en": "Hyperfibrinogenemia increases rates of femoropopliteal bypass thrombosis.",
+    "fr": "L' hyperfibrinogénémie augmente les taux de thrombose de contournement fémoropopliteal."
+   },
+   {
+    "qid": "532",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.301,
+    "en": "Hyperfibrinogenemia decreases rates of femoropopliteal bypass thrombosis.",
+    "fr": "L' hyperfibrinogénémie réduit les taux de thrombose de contournement fémoropopliteal."
+   },
+   {
+    "qid": "793",
+    "ndcg10_en": 1.0,
+    "ndcg10_fr": 0.333,
+    "en": "Mitochondria are uninvolved in apoptosis.",
+    "fr": "Les mitochondries ne sont pas impliquées dans l'apoptose."
+   }
+  ]
+ }
+}
